@@ -12,19 +12,17 @@ class BasePage:
     def __init__(self, webdriver: WebDriver, timeout: int = 10):
         self._webdriver = webdriver
         self.timeout = timeout
-        if self._check_url() is False:
+        if self._check_url(self.url_page) is False:
             raise ValueError(
                 f"Страница {self.get_url()} не соответствует классу: {self.__class__.__name__}"
             )
 
-    def _check_url(self, timeout=None) -> bool:
-        """Проверка совпадения URL текущей страницы заданному в атрибуте класса url_page"""
+    def _check_url(self, url_page: str, timeout=None) -> bool:
+        """Проверка наличия в URL текущей страницы текста url_page"""
         if timeout is None:
             timeout = self.timeout
         try:
-            WebDriverWait(self._webdriver, timeout).until(
-                EC.url_contains(self.url_page)
-            )
+            WebDriverWait(self._webdriver, timeout).until(EC.url_contains(url_page))
             return True
         except TimeoutException:
             return False
