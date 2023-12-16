@@ -1,5 +1,4 @@
-import time
-
+from servises import download_file
 from page_objects.sbis_pages import IndexPageSbis
 
 
@@ -65,3 +64,23 @@ class Tests:
         driver.get(IndexPageSbis.url_page)
         index_page_sbis = IndexPageSbis(webdriver=driver)
         assert "СБИС" in index_page_sbis.get_title()
+
+        # переход на страницу для скачивания файлов
+        download_page_sbis = index_page_sbis.click_link_download_sbis()
+        assert "Скачать" in download_page_sbis.get_title()
+
+        # кликнуть по кнопке СБИС Плагин
+        download_page_sbis.click_button_plugin()
+
+        # проверить что активна кнопка Windows
+        assert download_page_sbis.is_active_button_windows() is True
+
+        # скачивание файла
+        download_page_sbis.download_file()
+        size_file_from_website = download_page_sbis.get_size_download_file()
+        assert download_file.is_download_completed() is True
+        file_path = download_file.get_latest_file()
+        size_download_file = download_file.get_size_file(file_path)
+
+        # проверка размера файла
+        assert abs(size_file_from_website - size_download_file) < 0.01

@@ -1,7 +1,10 @@
+import re
+import time
+
 from selenium.webdriver.remote.webelement import WebElement
 
 from .base_page import BasePage
-from .locators.sbis_licators import IndexPageSbisLocator, ContactsPageSbisLocator
+from .locators import sbis_licators
 from .tensor_page import IndexPageTensor
 
 
@@ -9,7 +12,7 @@ class ContactsPageSkis(BasePage):
     """Класс страницы Контакты - sbis.ru"""
 
     url_page = "https://sbis.ru/contacts/"
-    locators = ContactsPageSbisLocator()
+    locators = sbis_licators.ContactsPageSbisLocator()
 
     def _get_block_contacts_clients(self) -> WebElement:
         return self.find_element(self.locators.CONTACTS_CLIENTS)
@@ -44,11 +47,50 @@ class ContactsPageSkis(BasePage):
         self._select_region(self.locators.REGION_NAME_KAMCHATKA)
 
 
+class DownloadPageSbis(BasePage):
+    """Класс главной страницы sbis.ru"""
+
+    url_page = "https://sbis.ru/download"
+    locators = sbis_licators.DownloadPageSbisLocator()
+
+    def click_button_plugin(self):
+        """Кликнуть по кнопке СБИС Плагин"""
+        self.click_to_elm(self.locators.BUTTON_PLUGIN)
+        time.sleep(1)
+        self.click_to_elm(self.locators.BUTTON_PLUGIN)
+
+    def is_active_button_windows(self) -> bool:
+        """Активна ли кнопка windows"""
+        elm = self.find_element(self.locators.BUTTON_WINDOWS)
+        atr_class = elm.get_attribute("class")
+        active_class = "controls-Checked__checked"
+        return True if active_class in atr_class else False
+
+    def download_file(self):
+        """Скачать файл"""
+        self.click_to_elm(self.locators.DOWNLOAD_FILE)
+
+    def get_size_download_file(self) -> float:
+        """Получить размер скачиваемого файла указанный на странице"""
+        elm = self.find_element(self.locators.DOWNLOAD_FILE)
+        size_file = self._get_size_file_of_str(elm.text)
+        return size_file
+
+    @staticmethod
+    def _get_size_file_of_str(string: str) -> float:
+        """Получение числа из строки"""
+        match = re.search(r"\d+(\.\d+)?\s+МБ", string)
+        if match:
+            return float(match.group()[:-2])
+        else:
+            raise ValueError("Строка не содержит число")
+
+
 class IndexPageSbis(BasePage):
     """Класс главной страницы sbis.ru"""
 
     url_page = "https://sbis.ru/"
-    locators = IndexPageSbisLocator()
+    locators = sbis_licators.IndexPageSbisLocator()
 
     def _get_block_header(self) -> WebElement:
         return self.find_element(self.locators.HEADER)
@@ -58,3 +100,10 @@ class IndexPageSbis(BasePage):
         block_header = self._get_block_header()
         self.click_to_elm(self.locators.LINK_CONTACTS, element=block_header)
         return ContactsPageSkis(self._webdriver)
+
+    def click_link_download_sbis(self) -> DownloadPageSbis:
+        """Кликнуть по ссылке Скачать СБИС"""
+        elm = self.find_element(self.locators.FOOTER_CONTAINER)
+        self.scroll_to_element(elm)
+        self.click_to_elm(self.locators.LINK_DOWNLOAD_SBIS)
+        return DownloadPageSbis(self._webdriver)
