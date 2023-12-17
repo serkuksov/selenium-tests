@@ -1,3 +1,5 @@
+import allure
+
 from page_objects.base_page import BasePage
 from page_objects.locators.tensor_licators import (
     IndexPageTensorLocator,
@@ -46,6 +48,7 @@ class IndexPageTensor(BasePage):
         elm = self.find_element(self.locators.HEADER_BLOCK_ABOUT)
         return elm.text
 
+    @allure.step("Клик по ссылке на страницу О нас")
     def click_link_block_about(self) -> AboutPageTensor:
         """Кликнуть по ссылке в блоке about"""
         elm = self.find_element(self.locators.LINK_BLOCK_ABOUT)

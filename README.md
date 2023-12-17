@@ -12,8 +12,14 @@
 * Python 3
 * Установленные зависимости из `requirements.txt`
 * Браузер Chrome 
+* Просмотр результатов тестов в виде отчета требует наличие установленной зависимости Allure
 
-## Запуск тестов
+## Использование
+1. Запуск тестов
 ```shell
-  pytest
+  pytest -sv --alluredir=allure-results
+```
+2. Просмотр результатов тестов
+```shell
+  allure serve allure-results
 ```

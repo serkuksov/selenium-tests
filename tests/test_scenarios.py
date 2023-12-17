@@ -1,8 +1,14 @@
+import allure
+import pytest
+
 from servises import download_file
 from page_objects.sbis_pages import IndexPageSbis
 
 
-class Tests:
+@allure.feature("Тестовые сценарии")
+class TestScenarios:
+    @allure.title("Тестовый сценарий № 1")
+    @allure.severity("Critical")
     def test_1(self, driver):
         """Тестовый кейс № 1"""
         # открытие https://sbis.ru/
@@ -31,6 +37,8 @@ class Tests:
         # Проверка размера картинок
         assert about_page_tensor.is_size_photo_block_working_equal() is True
 
+    @allure.title("Тестовый сценарий № 2")
+    @allure.severity("Critical")
     def test_2(self, driver):
         """Тестовый кейс № 2"""
         # открытие https://sbis.ru/
@@ -58,6 +66,8 @@ class Tests:
         name_partners_new = contact_page_sbis.get_name_partners()
         assert name_partners != name_partners_new
 
+    @allure.title("Тестовый сценарий № 3")
+    @allure.severity("Normal")
     def test_3(self, driver):
         """Тестовый кейс № 3"""
         # открытие https://sbis.ru/
