@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class IndexPageSbisLocator:
-    HEADER = (By.CLASS_NAME, "sbisru-Header")
-    LINK_CONTACTS = (By.LINK_TEXT, "Контакты")
+    HEADER = (By.XPATH, "//div[@class='sbisru-Header']")
+    LINK_CONTACTS = (By.XPATH, f"{HEADER[1]}//a[text()='Контакты']")
     LINK_DOWNLOAD_SBIS = (By.XPATH, "//a[text()='Скачать СБИС']")
     FOOTER_CONTAINER = (By.XPATH, "//div[@class='sbisru-Footer__container']")
 

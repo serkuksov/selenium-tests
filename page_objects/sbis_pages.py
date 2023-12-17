@@ -1,6 +1,7 @@
 import re
 import time
 
+import allure
 from selenium.webdriver.remote.webelement import WebElement
 
 from .base_page import BasePage
@@ -17,6 +18,7 @@ class ContactsPageSkis(BasePage):
     def _get_block_contacts_clients(self) -> WebElement:
         return self.find_element(self.locators.CONTACTS_CLIENTS)
 
+    @allure.step("Клик по банеру Тензор")
     def click_link_tensor(self) -> IndexPageTensor:
         """Кликнуть по банеру Тезор"""
         block_contacts_tensor = self._get_block_contacts_clients()
@@ -42,6 +44,7 @@ class ContactsPageSkis(BasePage):
         if self._check_url(url_page="41-kamchatskij-kraj") is False:
             raise ValueError("Не удалось выбрать регион")
 
+    @allure.step("Выбор региона - Камчатка")
     def select_region_kamchatka(self) -> None:
         """Выбрать регион Камчатка"""
         self._select_region(self.locators.REGION_NAME_KAMCHATKA)
@@ -53,6 +56,7 @@ class DownloadPageSbis(BasePage):
     url_page = "https://sbis.ru/download"
     locators = sbis_licators.DownloadPageSbisLocator()
 
+    @allure.step("Клик по кнопке СБИС Плагин")
     def click_button_plugin(self):
         """Кликнуть по кнопке СБИС Плагин"""
         self.click_to_elm(self.locators.BUTTON_PLUGIN)
@@ -66,9 +70,10 @@ class DownloadPageSbis(BasePage):
         active_class = "controls-Checked__checked"
         return True if active_class in atr_class else False
 
+    @allure.step("Скачивание файла")
     def download_file(self):
         """Скачать файл"""
-        self.click_to_elm(self.locators.DOWNLOAD_FILE)
+        self.click_to_elm(self.locators.DOWNLOAD_FILE, timeout=60)
 
     def get_size_download_file(self) -> float:
         """Получить размер скачиваемого файла указанный на странице"""
@@ -95,12 +100,13 @@ class IndexPageSbis(BasePage):
     def _get_block_header(self) -> WebElement:
         return self.find_element(self.locators.HEADER)
 
+    @allure.step("Клик по кнопке Контакты")
     def click_link_contacts(self):
         """Кликнуть по ссылке Контакты в header"""
-        block_header = self._get_block_header()
-        self.click_to_elm(self.locators.LINK_CONTACTS, element=block_header)
+        self.click_to_elm(self.locators.LINK_CONTACTS)
         return ContactsPageSkis(self._webdriver)
 
+    @allure.step("Клик по кнопке Скачать СБИС")
     def click_link_download_sbis(self) -> DownloadPageSbis:
         """Кликнуть по ссылке Скачать СБИС"""
         elm = self.find_element(self.locators.FOOTER_CONTAINER)

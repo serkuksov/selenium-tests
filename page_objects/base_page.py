@@ -1,3 +1,5 @@
+import time
+
 from selenium.common import TimeoutException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webdriver import WebDriver
@@ -12,6 +14,7 @@ class BasePage:
     def __init__(self, webdriver: WebDriver, timeout: int = 10):
         self._webdriver = webdriver
         self.timeout = timeout
+        time.sleep(1)
         if self._check_url(self.url_page) is False:
             raise ValueError(
                 f"Страница {self.get_url()} не соответствует классу: {self.__class__.__name__}"

@@ -1,0 +1,41 @@
+name: UI Tests
+
+on: push
+
+jobs:
+  ui-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Checkout (copy) gh-pages repository to GitHub runner
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: ./.github/gh-pages
+
+      - name: Run UI-tests via docker-compose
+        run: |
+          docker-compose up --exit-code-from selenium-tests || true
+
+#      - name: Copy history from gh-pages to allure-results
+#        run: |
+#          sudo mkdir -p allure-results/history  # Создает директорию для истории Allure
+#          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+
+      - name: Generate Allure report
+        run: |
+          sudo docker-compose run selenium-tests /bin/sh -c "allure generate allure-results --clean -o allure-report"
+
+#      - name: Update Allure history
+#        run: |
+#          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          token: ${{ secrets.CI_TOKEN }}
+          branch: gh-pages
+          folder: allure-report
+          clean: true
