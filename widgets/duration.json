@@ -1,31 +1,31 @@
 [ {
-  "uid" : "6b0ccdd85bcd382",
-  "name" : "Тестовый сценарий № 3",
-  "time" : {
-    "start" : 1702836311156,
-    "stop" : 1702836322950,
-    "duration" : 11794
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "d7d8bc09eb9c13a2",
+  "uid" : "7bb5748ded52de55",
   "name" : "Тестовый сценарий № 1",
   "time" : {
-    "start" : 1702836289005,
-    "stop" : 1702836300271,
-    "duration" : 11266
+    "start" : 1702836716546,
+    "stop" : 1702836730277,
+    "duration" : 13731
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "9ba324b13fec8953",
+  "uid" : "2d89e7aa3756d9b",
   "name" : "Тестовый сценарий № 2",
   "time" : {
-    "start" : 1702836301225,
-    "stop" : 1702836310269,
-    "duration" : 9044
+    "start" : 1702836731239,
+    "stop" : 1702836740919,
+    "duration" : 9680
   },
   "status" : "passed",
   "severity" : "critical"
+}, {
+  "uid" : "ee21fe5ddf859078",
+  "name" : "Тестовый сценарий № 3",
+  "time" : {
+    "start" : 1702836741814,
+    "stop" : 1702836752799,
+    "duration" : 10985
+  },
+  "status" : "failed",
+  "severity" : "normal"
 } ]

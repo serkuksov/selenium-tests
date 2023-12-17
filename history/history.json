@@ -9,33 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b0ccdd85bcd382",
+      "uid" : "ee21fe5ddf859078",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
       "time" : {
-        "start" : 1702836311156,
-        "stop" : 1702836322950,
-        "duration" : 11794
-      }
-    } ]
-  },
-  "bee925865a97c4c008011c0b0146f8a3" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d7d8bc09eb9c13a2",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
-      "time" : {
-        "start" : 1702836289005,
-        "stop" : 1702836300271,
-        "duration" : 11266
+        "start" : 1702836741814,
+        "stop" : 1702836752799,
+        "duration" : 10985
       }
     } ]
   },
@@ -49,12 +29,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9ba324b13fec8953",
+      "uid" : "2d89e7aa3756d9b",
       "status" : "passed",
       "time" : {
-        "start" : 1702836301225,
-        "stop" : 1702836310269,
-        "duration" : 9044
+        "start" : 1702836731239,
+        "stop" : 1702836740919,
+        "duration" : 9680
+      }
+    } ]
+  },
+  "bee925865a97c4c008011c0b0146f8a3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7bb5748ded52de55",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1702836716546,
+        "stop" : 1702836730277,
+        "duration" : 13731
       }
     } ]
   }

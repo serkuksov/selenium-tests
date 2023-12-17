@@ -1,12 +1,12 @@
 {
-  "uid" : "9ba324b13fec8953",
+  "uid" : "2d89e7aa3756d9b",
   "name" : "Тестовый сценарий № 2",
   "fullName" : "tests.test_scenarios.TestScenarios#test_2",
   "historyId" : "d6190023de210cb3dbc73398194137ed",
   "time" : {
-    "start" : 1702836301225,
-    "stop" : 1702836310269,
-    "duration" : 9044
+    "start" : 1702836731239,
+    "stop" : 1702836740919,
+    "duration" : 9680
   },
   "description" : "Тестовый кейс № 2",
   "descriptionHtml" : "<p>Тестовый кейс № 2</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1702836300411,
-      "stop" : 1702836301225,
-      "duration" : 814
+      "start" : 1702836730422,
+      "stop" : 1702836731238,
+      "duration" : 816
     },
     "status" : "passed",
     "steps" : [ ],
@@ -35,9 +35,9 @@
     "steps" : [ {
       "name" : "Клик по кнопке Контакты",
       "time" : {
-        "start" : 1702836305159,
-        "stop" : 1702836307897,
-        "duration" : 2738
+        "start" : 1702836735646,
+        "stop" : 1702836738593,
+        "duration" : 2947
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,9 +50,9 @@
     }, {
       "name" : "Выбор региона - Камчатка",
       "time" : {
-        "start" : 1702836308600,
-        "stop" : 1702836310238,
-        "duration" : 1638
+        "start" : 1702836739204,
+        "stop" : 1702836740887,
+        "duration" : 1683
       },
       "status" : "passed",
       "steps" : [ ],
@@ -73,8 +73,8 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1702836310269,
-      "stop" : 1702836310343,
+      "start" : 1702836740919,
+      "stop" : 1702836740993,
       "duration" : 74
     },
     "status" : "passed",
@@ -87,11 +87,11 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "Critical"
-  }, {
     "name" : "feature",
     "value" : "Тестовые сценарии"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -103,7 +103,7 @@
     "value" : "TestScenarios"
   }, {
     "name" : "host",
-    "value" : "ce8e076e5a99"
+    "value" : "bd17624617cc"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -130,6 +130,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9ba324b13fec8953.json",
+  "source" : "2d89e7aa3756d9b.json",
   "parameterValues" : [ ]
 }
