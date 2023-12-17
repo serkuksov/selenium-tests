@@ -1,0 +1,160 @@
+{
+  "uid" : "850bfe0d5c3283d8",
+  "name" : "Тестовый сценарий № 1",
+  "fullName" : "tests.test_scenarios.TestScenarios#test_1",
+  "historyId" : "bee925865a97c4c008011c0b0146f8a3",
+  "time" : {
+    "start" : 1702838415247,
+    "stop" : 1702838439337,
+    "duration" : 24090
+  },
+  "description" : "Тестовый кейс № 1",
+  "descriptionHtml" : "<p>Тестовый кейс № 1</p>\n",
+  "status" : "broken",
+  "statusMessage" : "ValueError: Страница https://tensor.ru/ не соответствует классу: AboutPageTensor",
+  "statusTrace" : "self = <tests.test_scenarios.TestScenarios object at 0x7fa622c73b90>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7398abf3de5bddba0a5b195f1b996c46\")>\n\n    @allure.title(\"Тестовый сценарий № 1\")\n    @allure.severity(\"Critical\")\n    def test_1(self, driver):\n        \"\"\"Тестовый кейс № 1\"\"\"\n        # открытие https://sbis.ru/\n        driver.get(IndexPageSbis.url_page)\n        index_page_sbis = IndexPageSbis(webdriver=driver)\n        assert \"СБИС\" in index_page_sbis.get_title()\n    \n        # переход на страницу Контакты\n        contact_page_sbis = index_page_sbis.click_link_contacts()\n        assert \"Контакты\" in contact_page_sbis.get_title()\n        assert contact_page_sbis.url_page in contact_page_sbis.get_url()\n    \n        # клик по банеру Тезор\n        index_page_tensor = contact_page_sbis.click_link_tensor()\n        assert \"Тензор\" in index_page_tensor.get_title()\n        assert \"Сила в людях\" in index_page_tensor.get_text_header_block_about()\n        assert index_page_tensor.is_block_about() is True\n    \n        # клик по ссылке подробнее в блоке Сила в людях\n>       about_page_tensor = index_page_tensor.click_link_block_about()\n\ntests/test_scenarios.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npage_objects/tensor_page.py:57: in click_link_block_about\n    return AboutPageTensor(self._webdriver)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <page_objects.tensor_page.AboutPageTensor object at 0x7fa622c73560>\nwebdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7398abf3de5bddba0a5b195f1b996c46\")>\ntimeout = 10\n\n    def __init__(self, webdriver: WebDriver, timeout: int = 10):\n        self._webdriver = webdriver\n        self.timeout = timeout\n        time.sleep(1)\n        if self._check_url(self.url_page) is False:\n>           raise ValueError(\n                f\"Страница {self.get_url()} не соответствует классу: {self.__class__.__name__}\"\n            )\nE           ValueError: Страница https://tensor.ru/ не соответствует классу: AboutPageTensor\n\npage_objects/base_page.py:19: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1702838414374,
+      "stop" : 1702838415247,
+      "duration" : 873
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Тестовый кейс № 1",
+    "status" : "broken",
+    "statusMessage" : "ValueError: Страница https://tensor.ru/ не соответствует классу: AboutPageTensor",
+    "statusTrace" : "self = <tests.test_scenarios.TestScenarios object at 0x7fa622c73b90>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7398abf3de5bddba0a5b195f1b996c46\")>\n\n    @allure.title(\"Тестовый сценарий № 1\")\n    @allure.severity(\"Critical\")\n    def test_1(self, driver):\n        \"\"\"Тестовый кейс № 1\"\"\"\n        # открытие https://sbis.ru/\n        driver.get(IndexPageSbis.url_page)\n        index_page_sbis = IndexPageSbis(webdriver=driver)\n        assert \"СБИС\" in index_page_sbis.get_title()\n    \n        # переход на страницу Контакты\n        contact_page_sbis = index_page_sbis.click_link_contacts()\n        assert \"Контакты\" in contact_page_sbis.get_title()\n        assert contact_page_sbis.url_page in contact_page_sbis.get_url()\n    \n        # клик по банеру Тезор\n        index_page_tensor = contact_page_sbis.click_link_tensor()\n        assert \"Тензор\" in index_page_tensor.get_title()\n        assert \"Сила в людях\" in index_page_tensor.get_text_header_block_about()\n        assert index_page_tensor.is_block_about() is True\n    \n        # клик по ссылке подробнее в блоке Сила в людях\n>       about_page_tensor = index_page_tensor.click_link_block_about()\n\ntests/test_scenarios.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npage_objects/tensor_page.py:57: in click_link_block_about\n    return AboutPageTensor(self._webdriver)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <page_objects.tensor_page.AboutPageTensor object at 0x7fa622c73560>\nwebdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7398abf3de5bddba0a5b195f1b996c46\")>\ntimeout = 10\n\n    def __init__(self, webdriver: WebDriver, timeout: int = 10):\n        self._webdriver = webdriver\n        self.timeout = timeout\n        time.sleep(1)\n        if self._check_url(self.url_page) is False:\n>           raise ValueError(\n                f\"Страница {self.get_url()} не соответствует классу: {self.__class__.__name__}\"\n            )\nE           ValueError: Страница https://tensor.ru/ не соответствует классу: AboutPageTensor\n\npage_objects/base_page.py:19: ValueError",
+    "steps" : [ {
+      "name" : "Клик по кнопке Контакты",
+      "time" : {
+        "start" : 1702838421387,
+        "stop" : 1702838424250,
+        "duration" : 2863
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Клик по банеру Тензор",
+      "time" : {
+        "start" : 1702838424254,
+        "stop" : 1702838427864,
+        "duration" : 3610
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Клик по ссылке на страницу О нас",
+      "time" : {
+        "start" : 1702838427966,
+        "stop" : 1702838439336,
+        "duration" : 11370
+      },
+      "status" : "broken",
+      "statusMessage" : "ValueError: Страница https://tensor.ru/ не соответствует классу: AboutPageTensor\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/page_objects/tensor_page.py\", line 57, in click_link_block_about\n    return AboutPageTensor(self._webdriver)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/page_objects/base_page.py\", line 19, in __init__\n    raise ValueError(\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1702838439369,
+      "stop" : 1702838439457,
+      "duration" : 88
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Тестовые сценарии"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_scenarios"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScenarios"
+  }, {
+    "name" : "host",
+    "value" : "a3f53fcf4a0c"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "850bfe0d5c3283d8.json",
+  "parameterValues" : [ ]
+}

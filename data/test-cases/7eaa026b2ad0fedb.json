@@ -1,12 +1,12 @@
 {
-  "uid" : "a8cc3aa2743de966",
+  "uid" : "7eaa026b2ad0fedb",
   "name" : "Тестовый сценарий № 2",
   "fullName" : "tests.test_scenarios.TestScenarios#test_2",
   "historyId" : "d6190023de210cb3dbc73398194137ed",
   "time" : {
-    "start" : 1702838333453,
-    "stop" : 1702838342402,
-    "duration" : 8949
+    "start" : 1702838440279,
+    "stop" : 1702838449917,
+    "duration" : 9638
   },
   "description" : "Тестовый кейс № 2",
   "descriptionHtml" : "<p>Тестовый кейс № 2</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1702838332638,
-      "stop" : 1702838333453,
-      "duration" : 815
+      "start" : 1702838439458,
+      "stop" : 1702838440279,
+      "duration" : 821
     },
     "status" : "passed",
     "steps" : [ ],
@@ -35,9 +35,9 @@
     "steps" : [ {
       "name" : "Клик по кнопке Контакты",
       "time" : {
-        "start" : 1702838337465,
-        "stop" : 1702838340100,
-        "duration" : 2635
+        "start" : 1702838444790,
+        "stop" : 1702838447593,
+        "duration" : 2803
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,9 +50,9 @@
     }, {
       "name" : "Выбор региона - Камчатка",
       "time" : {
-        "start" : 1702838340736,
-        "stop" : 1702838342371,
-        "duration" : 1635
+        "start" : 1702838448244,
+        "stop" : 1702838449886,
+        "duration" : 1642
       },
       "status" : "passed",
       "steps" : [ ],
@@ -73,9 +73,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1702838342402,
-      "stop" : 1702838342476,
-      "duration" : 74
+      "start" : 1702838449918,
+      "stop" : 1702838449993,
+      "duration" : 75
     },
     "status" : "passed",
     "steps" : [ ],
@@ -103,7 +103,7 @@
     "value" : "TestScenarios"
   }, {
     "name" : "host",
-    "value" : "4a417c2ec7a1"
+    "value" : "a3f53fcf4a0c"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -130,6 +130,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a8cc3aa2743de966.json",
+  "source" : "7eaa026b2ad0fedb.json",
   "parameterValues" : [ ]
 }
