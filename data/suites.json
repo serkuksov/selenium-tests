@@ -8,39 +8,39 @@
         "name" : "TestScenarios",
         "children" : [ {
           "name" : "Тестовый сценарий № 1",
-          "uid" : "850bfe0d5c3283d8",
+          "uid" : "db13abe6746adbc4",
           "parentUid" : "edf76bd14f6bd4af341d2cd1bf14bcb7",
           "status" : "broken",
           "time" : {
-            "start" : 1702838415247,
-            "stop" : 1702838439337,
-            "duration" : 24090
+            "start" : 1702838555269,
+            "stop" : 1702838567304,
+            "duration" : 12035
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Тестовый сценарий № 2",
-          "uid" : "7eaa026b2ad0fedb",
+          "uid" : "db868dce7161cc20",
           "parentUid" : "edf76bd14f6bd4af341d2cd1bf14bcb7",
           "status" : "passed",
           "time" : {
-            "start" : 1702838440279,
-            "stop" : 1702838449917,
-            "duration" : 9638
+            "start" : 1702838568272,
+            "stop" : 1702838579673,
+            "duration" : 11401
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Тестовый сценарий № 3",
-          "uid" : "984b21cf65040c7b",
+          "uid" : "5767cfce8b07167b",
           "parentUid" : "edf76bd14f6bd4af341d2cd1bf14bcb7",
           "status" : "failed",
           "time" : {
-            "start" : 1702838450808,
-            "stop" : 1702838461813,
-            "duration" : 11005
+            "start" : 1702838580566,
+            "stop" : 1702838590347,
+            "duration" : 9781
           },
           "flaky" : false,
           "newFailed" : false,

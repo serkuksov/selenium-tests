@@ -1,12 +1,12 @@
 {
-  "uid" : "7eaa026b2ad0fedb",
+  "uid" : "db868dce7161cc20",
   "name" : "Тестовый сценарий № 2",
   "fullName" : "tests.test_scenarios.TestScenarios#test_2",
   "historyId" : "d6190023de210cb3dbc73398194137ed",
   "time" : {
-    "start" : 1702838440279,
-    "stop" : 1702838449917,
-    "duration" : 9638
+    "start" : 1702838568272,
+    "stop" : 1702838579673,
+    "duration" : 11401
   },
   "description" : "Тестовый кейс № 2",
   "descriptionHtml" : "<p>Тестовый кейс № 2</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1702838439458,
-      "stop" : 1702838440279,
-      "duration" : 821
+      "start" : 1702838567461,
+      "stop" : 1702838568271,
+      "duration" : 810
     },
     "status" : "passed",
     "steps" : [ ],
@@ -35,9 +35,9 @@
     "steps" : [ {
       "name" : "Клик по кнопке Контакты",
       "time" : {
-        "start" : 1702838444790,
-        "stop" : 1702838447593,
-        "duration" : 2803
+        "start" : 1702838574165,
+        "stop" : 1702838577261,
+        "duration" : 3096
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,9 +50,9 @@
     }, {
       "name" : "Выбор региона - Камчатка",
       "time" : {
-        "start" : 1702838448244,
-        "stop" : 1702838449886,
-        "duration" : 1642
+        "start" : 1702838577980,
+        "stop" : 1702838579643,
+        "duration" : 1663
       },
       "status" : "passed",
       "steps" : [ ],
@@ -73,9 +73,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1702838449918,
-      "stop" : 1702838449993,
-      "duration" : 75
+      "start" : 1702838579674,
+      "stop" : 1702838579748,
+      "duration" : 74
     },
     "status" : "passed",
     "steps" : [ ],
@@ -87,11 +87,11 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "Critical"
-  }, {
     "name" : "feature",
     "value" : "Тестовые сценарии"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -103,7 +103,7 @@
     "value" : "TestScenarios"
   }, {
     "name" : "host",
-    "value" : "a3f53fcf4a0c"
+    "value" : "92668064ed45"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -130,6 +130,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7eaa026b2ad0fedb.json",
+  "source" : "db868dce7161cc20.json",
   "parameterValues" : [ ]
 }

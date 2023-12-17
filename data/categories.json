@@ -3,22 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "ValueError: Страница https://tensor.ru/ не соответствует классу: AboutPageTensor",
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
       "children" : [ {
         "name" : "Тестовый сценарий № 1",
-        "uid" : "850bfe0d5c3283d8",
-        "parentUid" : "e58c566049e799b72043ffb116b0620e",
+        "uid" : "db13abe6746adbc4",
+        "parentUid" : "110cd513a5b051fca313fcb8895606c0",
         "status" : "broken",
         "time" : {
-          "start" : 1702838415247,
-          "stop" : 1702838439337,
-          "duration" : 24090
+          "start" : 1702838555269,
+          "stop" : 1702838567304,
+          "duration" : 12035
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e58c566049e799b72043ffb116b0620e"
+      "uid" : "110cd513a5b051fca313fcb8895606c0"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   }, {
@@ -27,13 +27,13 @@
       "name" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
       "children" : [ {
         "name" : "Тестовый сценарий № 3",
-        "uid" : "984b21cf65040c7b",
+        "uid" : "5767cfce8b07167b",
         "parentUid" : "b6adfc8b94b759e2f516eb2c08c1527c",
         "status" : "failed",
         "time" : {
-          "start" : 1702838450808,
-          "stop" : 1702838461813,
-          "duration" : 11005
+          "start" : 1702838580566,
+          "stop" : 1702838590347,
+          "duration" : 9781
         },
         "flaky" : false,
         "newFailed" : false,
