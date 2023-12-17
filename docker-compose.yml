@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  selenium-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./allure-results:/usr/workspace/allure-results
+    command: pytest -sv --alluredir=allure-results
+    environment:
+      - IS_START_DOCKER=true
