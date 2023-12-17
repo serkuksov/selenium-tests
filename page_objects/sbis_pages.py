@@ -73,7 +73,7 @@ class DownloadPageSbis(BasePage):
     @allure.step("Скачивание файла")
     def download_file(self):
         """Скачать файл"""
-        self.click_to_elm(self.locators.DOWNLOAD_FILE)
+        self.click_to_elm(self.locators.DOWNLOAD_FILE, timeout=60)
 
     def get_size_download_file(self) -> float:
         """Получить размер скачиваемого файла указанный на странице"""
