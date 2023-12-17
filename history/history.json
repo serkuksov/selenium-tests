@@ -1,6 +1,26 @@
 {
   "6269f2ef8c59e1eb1987ef2dc7188ccf" : {
     "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b0ccdd85bcd382",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
+      "time" : {
+        "start" : 1702836311156,
+        "stop" : 1702836322950,
+        "duration" : 11794
+      }
+    } ]
+  },
+  "bee925865a97c4c008011c0b0146f8a3" : {
+    "statistic" : {
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
@@ -9,32 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "db24821c14ac87a",
+      "uid" : "d7d8bc09eb9c13a2",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
       "time" : {
-        "start" : 1702836052813,
-        "stop" : 1702836073219,
-        "duration" : 20406
-      }
-    } ]
-  },
-  "bee925865a97c4c008011c0b0146f8a3" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "16ef8a8c7e8e61bd",
-      "status" : "passed",
-      "time" : {
-        "start" : 1702836024406,
-        "stop" : 1702836040703,
-        "duration" : 16297
+        "start" : 1702836289005,
+        "stop" : 1702836300271,
+        "duration" : 11266
       }
     } ]
   },
@@ -48,12 +49,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "965b5da957014735",
+      "uid" : "9ba324b13fec8953",
       "status" : "passed",
       "time" : {
-        "start" : 1702836041618,
-        "stop" : 1702836051912,
-        "duration" : 10294
+        "start" : 1702836301225,
+        "stop" : 1702836310269,
+        "duration" : 9044
       }
     } ]
   }

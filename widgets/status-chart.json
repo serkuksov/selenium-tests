@@ -1,31 +1,31 @@
 [ {
-  "uid" : "965b5da957014735",
-  "name" : "Тестовый сценарий № 2",
-  "time" : {
-    "start" : 1702836041618,
-    "stop" : 1702836051912,
-    "duration" : 10294
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "16ef8a8c7e8e61bd",
-  "name" : "Тестовый сценарий № 1",
-  "time" : {
-    "start" : 1702836024406,
-    "stop" : 1702836040703,
-    "duration" : 16297
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "db24821c14ac87a",
+  "uid" : "6b0ccdd85bcd382",
   "name" : "Тестовый сценарий № 3",
   "time" : {
-    "start" : 1702836052813,
-    "stop" : 1702836073219,
-    "duration" : 20406
+    "start" : 1702836311156,
+    "stop" : 1702836322950,
+    "duration" : 11794
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7d8bc09eb9c13a2",
+  "name" : "Тестовый сценарий № 1",
+  "time" : {
+    "start" : 1702836289005,
+    "stop" : 1702836300271,
+    "duration" : 11266
   },
   "status" : "broken",
-  "severity" : "normal"
+  "severity" : "critical"
+}, {
+  "uid" : "9ba324b13fec8953",
+  "name" : "Тестовый сценарий № 2",
+  "time" : {
+    "start" : 1702836301225,
+    "stop" : 1702836310269,
+    "duration" : 9044
+  },
+  "status" : "passed",
+  "severity" : "critical"
 } ]

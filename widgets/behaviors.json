@@ -4,10 +4,10 @@
     "uid" : "bb06b48bc2cfcb0d3016505029f5c140",
     "name" : "Тестовые сценарии",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 3
     }

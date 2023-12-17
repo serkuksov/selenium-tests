@@ -1,24 +1,24 @@
 {
-  "uid" : "16ef8a8c7e8e61bd",
-  "name" : "Тестовый сценарий № 1",
-  "fullName" : "tests.test_scenarios.TestScenarios#test_1",
-  "historyId" : "bee925865a97c4c008011c0b0146f8a3",
+  "uid" : "9ba324b13fec8953",
+  "name" : "Тестовый сценарий № 2",
+  "fullName" : "tests.test_scenarios.TestScenarios#test_2",
+  "historyId" : "d6190023de210cb3dbc73398194137ed",
   "time" : {
-    "start" : 1702836024406,
-    "stop" : 1702836040703,
-    "duration" : 16297
+    "start" : 1702836301225,
+    "stop" : 1702836310269,
+    "duration" : 9044
   },
-  "description" : "Тестовый кейс № 1",
-  "descriptionHtml" : "<p>Тестовый кейс № 1</p>\n",
+  "description" : "Тестовый кейс № 2",
+  "descriptionHtml" : "<p>Тестовый кейс № 2</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1702836023480,
-      "stop" : 1702836024405,
-      "duration" : 925
+      "start" : 1702836300411,
+      "stop" : 1702836301225,
+      "duration" : 814
     },
     "status" : "passed",
     "steps" : [ ],
@@ -30,14 +30,14 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "Тестовый кейс № 1",
+    "description" : "Тестовый кейс № 2",
     "status" : "passed",
     "steps" : [ {
       "name" : "Клик по кнопке Контакты",
       "time" : {
-        "start" : 1702836031348,
-        "stop" : 1702836034163,
-        "duration" : 2815
+        "start" : 1702836305159,
+        "stop" : 1702836307897,
+        "duration" : 2738
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,26 +48,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Клик по банеру Тензор",
+      "name" : "Выбор региона - Камчатка",
       "time" : {
-        "start" : 1702836034167,
-        "stop" : 1702836038211,
-        "duration" : 4044
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Клик по ссылке на страницу О нас",
-      "time" : {
-        "start" : 1702836038310,
-        "stop" : 1702836040624,
-        "duration" : 2314
+        "start" : 1702836308600,
+        "stop" : 1702836310238,
+        "duration" : 1638
       },
       "status" : "passed",
       "steps" : [ ],
@@ -82,15 +67,15 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1702836040704,
-      "stop" : 1702836040795,
-      "duration" : 91
+      "start" : 1702836310269,
+      "stop" : 1702836310343,
+      "duration" : 74
     },
     "status" : "passed",
     "steps" : [ ],
@@ -118,7 +103,7 @@
     "value" : "TestScenarios"
   }, {
     "name" : "host",
-    "value" : "1242a3acffbf"
+    "value" : "ce8e076e5a99"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -145,6 +130,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "16ef8a8c7e8e61bd.json",
+  "source" : "9ba324b13fec8953.json",
   "parameterValues" : [ ]
 }
