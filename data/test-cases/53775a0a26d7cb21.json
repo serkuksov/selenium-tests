@@ -1,0 +1,158 @@
+{
+  "uid" : "53775a0a26d7cb21",
+  "name" : "Тестовый сценарий № 3",
+  "fullName" : "tests.test_scenarios.TestScenarios#test_3",
+  "historyId" : "6269f2ef8c59e1eb1987ef2dc7188ccf",
+  "time" : {
+    "start" : 1702838047893,
+    "stop" : 1702838058290,
+    "duration" : 10397
+  },
+  "description" : "Тестовый кейс № 3",
+  "descriptionHtml" : "<p>Тестовый кейс № 3</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
+  "statusTrace" : "self = <tests.test_scenarios.TestScenarios object at 0x7f1bc80c8b30>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a865ed0e5caf3570ff74d0d1d1c3aeec\")>\n\n    @allure.title(\"Тестовый сценарий № 3\")\n    @allure.severity(\"Normal\")\n    def test_3(self, driver):\n        \"\"\"Тестовый кейс № 3\"\"\"\n        # открытие https://sbis.ru/\n        driver.get(IndexPageSbis.url_page)\n        index_page_sbis = IndexPageSbis(webdriver=driver)\n        assert \"СБИС\" in index_page_sbis.get_title()\n    \n        # переход на страницу для скачивания файлов\n        download_page_sbis = index_page_sbis.click_link_download_sbis()\n        assert \"Скачать\" in download_page_sbis.get_title()\n    \n        # кликнуть по кнопке СБИС Плагин\n        download_page_sbis.click_button_plugin()\n    \n        # проверить что активна кнопка Windows\n        assert download_page_sbis.is_active_button_windows() is True\n    \n        # скачивание файла\n        download_page_sbis.download_file()\n        size_file_from_website = download_page_sbis.get_size_download_file()\n        assert download_file.is_download_completed() is True\n        file_path = download_file.get_latest_file()\n        size_download_file = download_file.get_size_file(file_path)\n    \n        # проверка размера файла\n>       assert abs(size_file_from_website - size_download_file) < 0.01\nE       assert 7.019999046325683 < 0.01\nE        +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))\n\ntests/test_scenarios.py:96: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1702838047079,
+      "stop" : 1702838047893,
+      "duration" : 814
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Тестовый кейс № 3",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
+    "statusTrace" : "self = <tests.test_scenarios.TestScenarios object at 0x7f1bc80c8b30>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a865ed0e5caf3570ff74d0d1d1c3aeec\")>\n\n    @allure.title(\"Тестовый сценарий № 3\")\n    @allure.severity(\"Normal\")\n    def test_3(self, driver):\n        \"\"\"Тестовый кейс № 3\"\"\"\n        # открытие https://sbis.ru/\n        driver.get(IndexPageSbis.url_page)\n        index_page_sbis = IndexPageSbis(webdriver=driver)\n        assert \"СБИС\" in index_page_sbis.get_title()\n    \n        # переход на страницу для скачивания файлов\n        download_page_sbis = index_page_sbis.click_link_download_sbis()\n        assert \"Скачать\" in download_page_sbis.get_title()\n    \n        # кликнуть по кнопке СБИС Плагин\n        download_page_sbis.click_button_plugin()\n    \n        # проверить что активна кнопка Windows\n        assert download_page_sbis.is_active_button_windows() is True\n    \n        # скачивание файла\n        download_page_sbis.download_file()\n        size_file_from_website = download_page_sbis.get_size_download_file()\n        assert download_file.is_download_completed() is True\n        file_path = download_file.get_latest_file()\n        size_download_file = download_file.get_size_file(file_path)\n    \n        # проверка размера файла\n>       assert abs(size_file_from_website - size_download_file) < 0.01\nE       assert 7.019999046325683 < 0.01\nE        +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))\n\ntests/test_scenarios.py:96: AssertionError",
+    "steps" : [ {
+      "name" : "Клик по кнопке Скачать СБИС",
+      "time" : {
+        "start" : 1702838052211,
+        "stop" : 1702838055718,
+        "duration" : 3507
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Клик по кнопке СБИС Плагин",
+      "time" : {
+        "start" : 1702838055720,
+        "stop" : 1702838056840,
+        "duration" : 1120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Скачивание файла",
+      "time" : {
+        "start" : 1702838056857,
+        "stop" : 1702838058274,
+        "duration" : 1417
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1702838058314,
+      "stop" : 1702838058392,
+      "duration" : 78
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Тестовые сценарии"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_scenarios"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScenarios"
+  }, {
+    "name" : "host",
+    "value" : "6b5522ec280d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "53775a0a26d7cb21.json",
+  "parameterValues" : [ ]
+}

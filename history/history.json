@@ -9,13 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ee21fe5ddf859078",
+      "uid" : "53775a0a26d7cb21",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
       "time" : {
-        "start" : 1702836741814,
-        "stop" : 1702836752799,
-        "duration" : 10985
+        "start" : 1702838047893,
+        "stop" : 1702838058290,
+        "duration" : 10397
+      }
+    } ]
+  },
+  "bee925865a97c4c008011c0b0146f8a3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b6fc33a9127fda43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702838021027,
+        "stop" : 1702838036218,
+        "duration" : 15191
       }
     } ]
   },
@@ -29,32 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2d89e7aa3756d9b",
+      "uid" : "8ca463ed0b665a25",
       "status" : "passed",
       "time" : {
-        "start" : 1702836731239,
-        "stop" : 1702836740919,
-        "duration" : 9680
-      }
-    } ]
-  },
-  "bee925865a97c4c008011c0b0146f8a3" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7bb5748ded52de55",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
-      "time" : {
-        "start" : 1702836716546,
-        "stop" : 1702836730277,
-        "duration" : 13731
+        "start" : 1702838037140,
+        "stop" : 1702838047002,
+        "duration" : 9862
       }
     } ]
   }

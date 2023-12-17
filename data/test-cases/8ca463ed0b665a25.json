@@ -1,0 +1,135 @@
+{
+  "uid" : "8ca463ed0b665a25",
+  "name" : "Тестовый сценарий № 2",
+  "fullName" : "tests.test_scenarios.TestScenarios#test_2",
+  "historyId" : "d6190023de210cb3dbc73398194137ed",
+  "time" : {
+    "start" : 1702838037140,
+    "stop" : 1702838047002,
+    "duration" : 9862
+  },
+  "description" : "Тестовый кейс № 2",
+  "descriptionHtml" : "<p>Тестовый кейс № 2</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1702838036327,
+      "stop" : 1702838037140,
+      "duration" : 813
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Тестовый кейс № 2",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Клик по кнопке Контакты",
+      "time" : {
+        "start" : 1702838041445,
+        "stop" : 1702838044708,
+        "duration" : 3263
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Выбор региона - Камчатка",
+      "time" : {
+        "start" : 1702838045334,
+        "stop" : 1702838046970,
+        "duration" : 1636
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1702838047002,
+      "stop" : 1702838047077,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Тестовые сценарии"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_scenarios"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScenarios"
+  }, {
+    "name" : "host",
+    "value" : "6b5522ec280d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ca463ed0b665a25.json",
+  "parameterValues" : [ ]
+}

@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Sun Dec 17 18:11:56 GMT 2023","Sun Dec 17 18:12:10 GMT 2023","13731","tests","test_scenarios","TestScenarios","","","Тестовый сценарий № 1","Тестовый кейс № 1"
-"passed","Sun Dec 17 18:12:11 GMT 2023","Sun Dec 17 18:12:20 GMT 2023","9680","tests","test_scenarios","TestScenarios","","","Тестовый сценарий № 2","Тестовый кейс № 2"
-"failed","Sun Dec 17 18:12:21 GMT 2023","Sun Dec 17 18:12:32 GMT 2023","10985","tests","test_scenarios","TestScenarios","","","Тестовый сценарий № 3","Тестовый кейс № 3"
+"failed","Sun Dec 17 18:34:07 GMT 2023","Sun Dec 17 18:34:18 GMT 2023","10397","tests","test_scenarios","TestScenarios","","","Тестовый сценарий № 3","Тестовый кейс № 3"
+"passed","Sun Dec 17 18:33:57 GMT 2023","Sun Dec 17 18:34:07 GMT 2023","9862","tests","test_scenarios","TestScenarios","","","Тестовый сценарий № 2","Тестовый кейс № 2"
+"passed","Sun Dec 17 18:33:41 GMT 2023","Sun Dec 17 18:33:56 GMT 2023","15191","tests","test_scenarios","TestScenarios","","","Тестовый сценарий № 1","Тестовый кейс № 1"

@@ -1,39 +1,18 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
-      "children" : [ {
-        "name" : "Тестовый сценарий № 1",
-        "uid" : "7bb5748ded52de55",
-        "parentUid" : "110cd513a5b051fca313fcb8895606c0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702836716546,
-          "stop" : 1702836730277,
-          "duration" : 13731
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "110cd513a5b051fca313fcb8895606c0"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
       "children" : [ {
         "name" : "Тестовый сценарий № 3",
-        "uid" : "ee21fe5ddf859078",
+        "uid" : "53775a0a26d7cb21",
         "parentUid" : "b6adfc8b94b759e2f516eb2c08c1527c",
         "status" : "failed",
         "time" : {
-          "start" : 1702836741814,
-          "stop" : 1702836752799,
-          "duration" : 10985
+          "start" : 1702838047893,
+          "stop" : 1702838058290,
+          "duration" : 10397
         },
         "flaky" : false,
         "newFailed" : false,
