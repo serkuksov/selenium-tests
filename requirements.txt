@@ -1,3 +1,0 @@
-pytest==7.4.3
-selenium==4.16.0
-webdriver-manager==4.0.1

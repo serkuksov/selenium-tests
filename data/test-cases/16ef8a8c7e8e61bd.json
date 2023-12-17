@@ -1,0 +1,150 @@
+{
+  "uid" : "16ef8a8c7e8e61bd",
+  "name" : "Тестовый сценарий № 1",
+  "fullName" : "tests.test_scenarios.TestScenarios#test_1",
+  "historyId" : "bee925865a97c4c008011c0b0146f8a3",
+  "time" : {
+    "start" : 1702836024406,
+    "stop" : 1702836040703,
+    "duration" : 16297
+  },
+  "description" : "Тестовый кейс № 1",
+  "descriptionHtml" : "<p>Тестовый кейс № 1</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1702836023480,
+      "stop" : 1702836024405,
+      "duration" : 925
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Тестовый кейс № 1",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Клик по кнопке Контакты",
+      "time" : {
+        "start" : 1702836031348,
+        "stop" : 1702836034163,
+        "duration" : 2815
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Клик по банеру Тензор",
+      "time" : {
+        "start" : 1702836034167,
+        "stop" : 1702836038211,
+        "duration" : 4044
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Клик по ссылке на страницу О нас",
+      "time" : {
+        "start" : 1702836038310,
+        "stop" : 1702836040624,
+        "duration" : 2314
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1702836040704,
+      "stop" : 1702836040795,
+      "duration" : 91
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Тестовые сценарии"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_scenarios"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScenarios"
+  }, {
+    "name" : "host",
+    "value" : "1242a3acffbf"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "16ef8a8c7e8e61bd.json",
+  "parameterValues" : [ ]
+}

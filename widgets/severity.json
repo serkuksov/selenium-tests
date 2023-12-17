@@ -1,0 +1,31 @@
+[ {
+  "uid" : "965b5da957014735",
+  "name" : "Тестовый сценарий № 2",
+  "time" : {
+    "start" : 1702836041618,
+    "stop" : 1702836051912,
+    "duration" : 10294
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "16ef8a8c7e8e61bd",
+  "name" : "Тестовый сценарий № 1",
+  "time" : {
+    "start" : 1702836024406,
+    "stop" : 1702836040703,
+    "duration" : 16297
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "db24821c14ac87a",
+  "name" : "Тестовый сценарий № 3",
+  "time" : {
+    "start" : 1702836052813,
+    "stop" : 1702836073219,
+    "duration" : 20406
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
