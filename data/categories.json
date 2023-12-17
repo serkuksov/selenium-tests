@@ -1,18 +1,39 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+      "children" : [ {
+        "name" : "Тестовый сценарий № 1",
+        "uid" : "f2a300d85e3bd9f5",
+        "parentUid" : "d39bf102e1e5bf5134ee723b8fd3f516",
+        "status" : "broken",
+        "time" : {
+          "start" : 1702838320797,
+          "stop" : 1702838332484,
+          "duration" : 11687
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d39bf102e1e5bf5134ee723b8fd3f516"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
       "children" : [ {
         "name" : "Тестовый сценарий № 3",
-        "uid" : "53775a0a26d7cb21",
+        "uid" : "b1e4b99a84fdff54",
         "parentUid" : "b6adfc8b94b759e2f516eb2c08c1527c",
         "status" : "failed",
         "time" : {
-          "start" : 1702838047893,
-          "stop" : 1702838058290,
-          "duration" : 10397
+          "start" : 1702838343294,
+          "stop" : 1702838352913,
+          "duration" : 9619
         },
         "flaky" : false,
         "newFailed" : false,
