@@ -42,6 +42,7 @@ class IndexPageTensor(BasePage):
 
     def get_text_header_block_about(self) -> str:
         """Получить заголовок блока about"""
+        self.element_visibility(self.locators.HEADER_BLOCK_ABOUT)
         elm = self.find_element(self.locators.HEADER_BLOCK_ABOUT)
         return elm.text
 
