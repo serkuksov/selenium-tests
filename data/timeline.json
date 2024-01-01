@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "92668064ed45",
+    "name" : "28f3fc533be2",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
         "name" : "Тестовый сценарий № 2",
-        "uid" : "db868dce7161cc20",
-        "parentUid" : "73596dd819fd3416f0cb1fc860040e95",
+        "uid" : "58b46eebbc9f846d",
+        "parentUid" : "14efe88c1854c6bda9a195f2eb148b5a",
         "status" : "passed",
         "time" : {
-          "start" : 1702838568272,
-          "stop" : 1702838579673,
-          "duration" : 11401
+          "start" : 1704131357371,
+          "stop" : 1704131365815,
+          "duration" : 8444
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Тестовый сценарий № 1",
-        "uid" : "db13abe6746adbc4",
-        "parentUid" : "73596dd819fd3416f0cb1fc860040e95",
+        "uid" : "be058a2ea318f9dc",
+        "parentUid" : "14efe88c1854c6bda9a195f2eb148b5a",
         "status" : "broken",
         "time" : {
-          "start" : 1702838555269,
-          "stop" : 1702838567304,
-          "duration" : 12035
+          "start" : 1704131344389,
+          "stop" : 1704131356408,
+          "duration" : 12019
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Тестовый сценарий № 3",
-        "uid" : "5767cfce8b07167b",
-        "parentUid" : "73596dd819fd3416f0cb1fc860040e95",
+        "uid" : "ba1899a0126eb6ad",
+        "parentUid" : "14efe88c1854c6bda9a195f2eb148b5a",
         "status" : "failed",
         "time" : {
-          "start" : 1702838580566,
-          "stop" : 1702838590347,
-          "duration" : 9781
+          "start" : 1704131366710,
+          "stop" : 1704131376580,
+          "duration" : 9870
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "73596dd819fd3416f0cb1fc860040e95"
+      "uid" : "14efe88c1854c6bda9a195f2eb148b5a"
     } ],
-    "uid" : "58e8de3cc1c0bdb785b29ca0ee8f9412"
+    "uid" : "9b706a4e508916ad3d702b08cfad2e0b"
   } ],
   "name" : "timeline"
 }

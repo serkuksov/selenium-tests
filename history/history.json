@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5767cfce8b07167b",
+      "uid" : "ba1899a0126eb6ad",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 7.019999046325683 < 0.01\n +  where 7.019999046325683 = abs((7.02 - 9.5367431640625e-07))",
       "time" : {
-        "start" : 1702838580566,
-        "stop" : 1702838590347,
-        "duration" : 9781
+        "start" : 1704131366710,
+        "stop" : 1704131376580,
+        "duration" : 9870
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "db868dce7161cc20",
+      "uid" : "58b46eebbc9f846d",
       "status" : "passed",
       "time" : {
-        "start" : 1702838568272,
-        "stop" : 1702838579673,
-        "duration" : 11401
+        "start" : 1704131357371,
+        "stop" : 1704131365815,
+        "duration" : 8444
       }
     } ]
   },
@@ -48,13 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "db13abe6746adbc4",
+      "uid" : "be058a2ea318f9dc",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"/about\" class=\"tensor_ru-link tensor_ru-Index__link\">...</a> is not clickable at point (476, 1068). Other element would receive the click: <noindex>...</noindex>\n  (Session info: headless chrome=112.0.5615.165)",
       "time" : {
-        "start" : 1702838555269,
-        "stop" : 1702838567304,
-        "duration" : 12035
+        "start" : 1704131344389,
+        "stop" : 1704131356408,
+        "duration" : 12019
       }
     } ]
   }
